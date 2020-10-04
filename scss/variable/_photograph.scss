@@ -1,0 +1,109 @@
+@import "variable";
+
+.third__section {
+  padding-left: var(--min-width);
+  padding-top: calc(var(--min-width) * 2);
+}
+
+.thirst__secton--heading > h4 {
+  font-size: var(--height);
+  line-height: calc(var(--min-width) * 2);
+  text-transform: uppercase;
+}
+
+.thirst__secton--heading > p {
+  @include blend_mode;
+}
+
+.intro__lists--icons {
+  @include flex_no_space;
+  padding: 0;
+}
+
+.intro__lists--icons > li {
+  list-style: $allnones;
+}
+
+.intro__lists--icons > li > a {
+  text-decoration: $allnones;
+}
+
+.navigation {
+  padding-top: calc(var(--min-width) * 2);
+}
+
+.navigation__lists {
+  font-size: var(--min-width);
+  line-height: calc(var(--pixels) - 27px);
+  list-style: $allnones;
+  padding: 0;
+  margin: 0;
+}
+
+.bold > a {
+  color: #000000;
+  text-decoration: $allnones;
+}
+
+.light__link {
+  padding-bottom: calc(var(--min-width) * 3);
+}
+
+.light__link > li > a {
+  @include blend_mode;
+  text-decoration: $allnones;
+}
+
+// About the small images in the paragaph section
+
+.food > p:nth-of-type(1),
+.experiece > p:nth-of-type(1) {
+  @include blend_mode;
+  margin-left: calc(var(--pixels) + 34px);
+  margin-top: -50px;
+}
+
+.food > p:nth-of-type(2),
+.experiece > p:nth-of-type(2) {
+  margin-left: calc(var(--min-width) * 6);
+  margin-top: -14px;
+}
+
+.aside {
+  padding-bottom: calc(var(--min-width) + 16px);
+}
+
+.food {
+  margin-bottom: calc(var(--min-width) * 2);
+}
+
+.food::before {
+  content: "";
+  background-image: url(../images/woman_xs.jpg);
+  @include before;
+}
+
+.experiece::before {
+  content: "";
+  background-image: url(../images/passage_xs.jpg);
+  @include before;
+}
+
+@media (min-width: $querry) {
+  .third__section {
+    @include flex;
+    padding-left: var(--pixels);
+    padding-top: var(--pixels);
+    padding-bottom: var(--pixels);
+  }
+
+  .thirst__secton--heading {
+    max-width: 270px;
+  }
+
+  .aside {
+    padding-right: var(--pixels);
+    padding-left: calc(var(--pixels) - 22px);
+    margin-top: calc(var(--pixels) - 4px);
+  }
+}

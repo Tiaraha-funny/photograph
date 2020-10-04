@@ -1,0 +1,27 @@
+@import "variable";
+
+footer {
+  margin-left: var(--min-width);
+  padding-bottom: calc(var(--min-width) * 2);
+}
+
+.laaqiq,
+.onja {
+  @include blend_mode;
+  text-decoration: $allnones;
+}
+
+.main__footer {
+  @include blend_mode;
+}
+
+@media (min-width: $querry) {
+  footer {
+    padding-top: calc(var(--min-width) * 2);
+  }
+
+  .main__footer {
+    @include flex;
+    margin-right: calc(var(--min-width) * 5);
+  }
+}

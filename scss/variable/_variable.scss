@@ -1,0 +1,38 @@
+$format1: format(woff);
+$format2: format(woff2);
+$querry: 1440px;
+$allnones: none;
+$pix: 64px;
+$whitecl: #ffffff;
+$orangecl: #ffdd78;
+$width-percentage: 100%;
+$width-pixels: 350px;
+$min-width: 16px;
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex_no_space {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin blend_mode {
+  font-family: "dm_sans";
+  font-size: var(--min-width);
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+}
+
+@mixin before {
+  background-repeat: no-repeat;
+  background-size: var(--width);
+  display: block;
+  width: 75px;
+  height: 45px;
+  border-radius: 8px;
+}

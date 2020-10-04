@@ -1,0 +1,20 @@
+@import "variable";
+
+aside {
+  padding-top: calc(var(--min-width) * 2);
+}
+
+aside > a::before {
+  background-image: url(../icons/icon_arrow_left.png);
+  background-repeat: no-repeat;
+  background-size: 13.5px;
+  background-position-y: calc(var(--min-width) - 10px);
+  padding-left: var(--min-width);
+  padding-right: var(--min-width);
+  content: "";
+  }
+
+aside > a {
+  @include blend_mode;
+  text-decoration: $allnones;
+}

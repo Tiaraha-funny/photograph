@@ -1,0 +1,67 @@
+@import "variable";
+
+:root {
+  --position: absolute;
+  --white: #{$whitecl};
+  --orange: #{$orangecl};
+  --width: #{$width-percentage};
+  --width-P: #{$width-pixels};
+  --pixels: #{$pix};
+  --min-width: #{$min-width};
+  --height: calc(var(--min-width) + 8px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Serif Display";
+  box-sizing: border-box;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: var(--height);
+  line-height: calc(var(--min-width) * 2);
+  padding: 2%;
+}
+
+p,
+a {
+  font-family: "DM Sans";
+}
+
+a {
+  color: $whitecl;
+}
+
+ul > div > li a:hover,
+ul > li a:hover,
+a:hover {
+  color: var(--orange);
+}
+
+img {
+  max-width: var(--width);
+}
+
+figure {
+  margin: 0;
+  padding-top: calc(var(--min-width) * 2);
+  padding-bottom: calc(var(--min-width) * 2);
+}
+
+span {
+  visibility: hidden;
+}
+
+@media (min-width: $querry) {
+  h1 {
+    font-size: calc(var(--min-width) + 24px);
+    line-height: calc(var(--min-width) * 3);
+    padding-left: calc(var(--pixels) - 10px);
+  }
+
+  header > nav {
+    @include flex;
+  }
+}

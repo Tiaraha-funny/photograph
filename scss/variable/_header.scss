@@ -1,0 +1,141 @@
+@import "variable";
+
+.masthead__icon--menu {
+  padding-top: calc(var(--pixels) - 32px);
+}
+
+.masthead {
+  background-color: #434ccc;
+  color: var(--white);
+  padding-left: calc(var(--pixels) - 48px);
+  @include flex;
+}
+
+.masthead__navigation {
+  display: $allnones;
+}
+
+[type="checkbox"] {
+  position: var(--position);
+  right: calc(var(--pixels) - 37px);
+  top: calc(var(--pixels) - 29px);
+  width: 2px;
+}
+
+[type="checkbox"]:checked ~ header label {
+  position: var(--position);
+  background-color: #000000;
+  right: 0;
+  opacity: 0.6;
+  width: 100%;
+  height: 50%;
+  top: calc(var(--pixels) + 14px);
+  transform: translateX(50%);
+  transition-timing-function: ease;
+  animation-name: menu;
+  animation-duration: 2s;
+}
+
+@keyframes menu {
+  0% {
+    background-color: #000000;
+    opacity: 2;
+    left: -200px;
+    right: 200px;
+  }
+  25% {
+    background-color: var(--orange);
+    opacity: 1.5;
+    left: -100px;
+    right: 100px;
+  }
+  50% {
+    background-color: #000000;
+    opacity: 0.5;
+    left: 0px;
+    right: 0px;
+  }
+}
+
+[type="checkbox"]:checked ~ header nav > ul > li > a:hover {
+  color: var(--orange);
+}
+
+[type="checkbox"]:checked ~ header > nav {
+  display: block;
+  position: var(--position);
+  right: var(--pixels);
+  top: calc(var(--pixels) + 26px);
+  transform: translateX(0%);
+  animation-name: lists;
+  animation-duration: 2s;
+}
+
+@keyframes lists {
+  0% {
+    left: -200px;
+    right: 200px;
+  }
+  25% {
+    left: -100px;
+    right: 100px;
+  }
+  50% {
+    left: 0px;
+    right: 0px;
+  }
+}
+
+.bold1 {
+  display: block;
+}
+
+.lists {
+  list-style: $allnones;
+  line-height: calc(var(--pixels) - 19px);
+  margin: 0;
+  padding: 0;
+}
+
+.lists > li > a {
+  text-decoration: $allnones;
+  color: var(--white);
+}
+
+.menu {
+  width: calc(var(--width) - 50%);
+}
+
+@media (min-width: $querry) {
+  .masthead__icon--menu {
+    display: $allnones;
+  }
+
+  .masthead__navigation {
+    display: block;
+    margin-right: var(--pixels);
+    margin-top: var(--pixels);
+  }
+
+  .lists {
+    @include flex;
+  }
+
+  .lists > li {
+    list-style: $allnones;
+    margin-right: calc(var(--pixels) - var(--min-width));
+  }
+
+  .lists > li > a {
+    font-weight: 700;
+    font-size: calc(var(--pixels) - 48px);
+    line-height: calc(var(--pixels) - 40px);
+    text-decoration: $allnones;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+
+  .bold1 {
+    display: $allnones;
+  }
+}

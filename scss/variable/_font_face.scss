@@ -1,0 +1,50 @@
+@import "variable";
+
+//This code is handling all the fonts. I don't know whether it is working or not because when I checked it in the browser. There is no error but it doesn't show in the browser.
+
+$font-face: (
+    font-family: "DM Sans",
+    font-weight: 400,
+    font-style: normal,
+    src1: local("DM Sans"),
+    src2: local("dm-ans"),
+    woff2: url("./fonts/dm_sans_400.woff2") $format2,
+    woff1: url("./fonts/dm_sans_400.woff") $format1,
+  ),
+  (
+    font-family: "DM Sans",
+    font-weight: 700,
+    font-style: normal,
+    src1: local("DM Sans"),
+    src2: local("dm-ans"),
+    woff2: url("./fonts/dm_sans_700.woff2") $format2,
+    woff1: url("./fonts/dm_sans_700.woff") $format1,
+  ),
+  (
+    font-family: "DM Sans",
+    font-weight: 400,
+    font-style: italic,
+    src1: local("DM Sans"),
+    src2: local("dm-ans"),
+    woff2: url("./fonts/dm_sans_400_italic.woff2") $format2,
+    woff1: url("./fonts/dm_sans_400_italic.woff") $format1,
+  ),
+  (
+    font-family: "dm_serif_display",
+    font-weight: 400,
+    font-style: normal,
+    src1: local("DM Serif Display"),
+    src2: local("dm_serif_display"),
+    woff2: url("./fonts/dm_serif_display_400.woff2") $format2,
+    woff1: url("./fonts/dm_serif_display_400.woff") $format1,
+  );
+
+@each $font in $font-face {
+  @font-face {
+    font-weight: map-get($font, font-weight);
+    font-family: map-get($font, font-family);
+    font-style: normal;
+    src: map-get($font, src1), map-get($font, src2), map-get($font, woff2),
+      map-get($font, woff1);
+  }
+}

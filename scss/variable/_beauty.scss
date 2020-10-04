@@ -1,0 +1,38 @@
+@import "variable";
+
+.first__section {
+  background-color: rgba(67, 76, 204, 0.05);
+  mix-blend-mode: normal;
+  padding-right: var(--min-width);
+  padding-left: var(--min-width);
+}
+
+.choosen__image > img {
+  width: var(--width);
+}
+
+.heading > h2 {
+  font-size: calc(var(--width-P) - 298px);
+  line-height: calc(var(--width-P) - 286px);
+  max-width: var(--width-P);
+}
+
+.heading > p {
+  font-size: calc(var(--min-width) + 2px);
+  line-height: calc(var(--min-width) * 2);
+  padding-bottom: calc(var(--min-width) * 2);
+}
+
+@media (min-width: $querry) {
+  .heading > h2 {
+    max-width: calc(var(--width-P) + 129px);
+    font-size: calc(var(--pixels) + 8px);
+    line-height: calc(var(--min-width) * 5);
+  }
+  
+
+  .first__section {
+    padding-right: calc(var(--min-width) * 5);
+    padding-left: calc(var(--min-width) * 5);
+  }
+}

@@ -1,0 +1,91 @@
+@import "variable";
+
+.second__section {
+  background-color: var(--orange);
+  padding: var(--min-width);
+  padding-top: calc(var(--min-width) * 5);
+}
+
+.latest__heading > a {
+  font-size: var(--min-width);
+  line-height: var(--height);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: $allnones;
+  color: #000000;
+}
+
+.latest__heading > h3 {
+  font-size: 40px;
+  line-height: calc(var(--min-width) * 3);
+  max-width: calc(var(--width-P) - 36px);
+}
+
+.latest__email {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: var(--min-width);
+  line-height: calc(var(--pixels) - 4px);
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.latest__email ~ input {
+  width: var(--width);
+  padding: var(--min-width);
+  background: var(--white);
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#placeholder {
+  @include blend_mode;
+}
+
+.second__section > button {
+  padding: calc(var(--min-width) - 4px);
+  background-color: #434ccc;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  font-weight: 700;
+  font-size: var(--min-width);
+  line-height: var(--height);
+  text-align: center;
+  color: $whitecl;
+  margin-top: var(--min-width);
+}
+
+.second__section > button:hover {
+  color: var(--orange);
+}
+
+@media (min-width: $querry) {
+  .latest__heading > h3 {
+    font-size: calc(var(--pixels) - 12px);
+    line-height: var(--pixels);
+    max-width: calc(var(--width-P) + 53px);
+  }
+
+  .second__section {
+    @include flex;
+    padding-right: var(--pixels);
+    padding-top: calc(var(--pixels) - 1px);
+  }
+
+  .second__section > form {
+    margin-top: calc(var(--pixels) - 7px);
+    margin-left: 315px;
+  }
+
+  .latest__email ~ input {
+    width: calc(var(--width-P) + 40px);
+  }
+
+  .second__section > button {
+    max-width: calc(var(--width-P) - 128px);
+    max-height: calc(var(--pixels) - 17px);
+    margin-top: calc(var(--pixels) + 53px);
+  }
+}
