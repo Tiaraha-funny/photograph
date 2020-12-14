@@ -13,13 +13,14 @@
   border-radius: 6px;
 }
 
-picture::-webkit-scrollbar {
+.sliding::-webkit-scrollbar {
   display: none;
 }
 
 .ChoosenImg > img {
   width: var(--width);
   border-radius: 6px;
+  height: 100%;
 }
 
 @media (min-width: $querry) {
