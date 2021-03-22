@@ -17,9 +17,11 @@
 
 [type="checkbox"] {
   position: var(--position);
-  right: calc(var(--pixels) - 37px);
-  top: calc(var(--pixels) - 29px);
-  width: 2px;
+  right: calc(var(--pixels) - 51px);
+  top: calc(var(--pixels) - 37px);
+  width: 30px;
+  height: 26px;
+  opacity: 0;
 }
 
 [type="checkbox"]:checked ~ header label {

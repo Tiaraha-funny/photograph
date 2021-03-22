@@ -1,7 +1,11 @@
 .sliding:not(.ChoosenImg) {
   display: flex;
   overflow-x: auto;
-  opacity: 0.5;
+  cursor: pointer;
+}
+
+.slide:hover, .slide:focus {
+  opacity: 0.9;
 }
 
 .slide {
@@ -11,6 +15,7 @@
   margin-bottom: 7px;
   margin-right: calc(var(--min-width) - 6px);
   border-radius: 6px;
+  opacity: 0.5;
 }
 
 .sliding::-webkit-scrollbar {

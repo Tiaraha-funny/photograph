@@ -93,9 +93,11 @@ span {
 
 [type="checkbox"] {
   position: var(--position);
-  right: calc(var(--pixels) - 37px);
-  top: calc(var(--pixels) - 29px);
-  width: 2px; }
+  right: calc(var(--pixels) - 51px);
+  top: calc(var(--pixels) - 37px);
+  width: 30px;
+  height: 26px;
+  opacity: 0; }
 
 [type="checkbox"]:checked ~ header label {
   position: var(--position);
@@ -241,7 +243,10 @@ aside > a {
 .sliding:not(.ChoosenImg) {
   display: flex;
   overflow-x: auto;
-  opacity: 0.5; }
+  cursor: pointer; }
+
+.slide:hover, .slide:focus {
+  opacity: 0.9; }
 
 .slide {
   width: 137px;
@@ -249,7 +254,8 @@ aside > a {
   height: var(--width);
   margin-bottom: 7px;
   margin-right: calc(var(--min-width) - 6px);
-  border-radius: 6px; }
+  border-radius: 6px;
+  opacity: 0.5; }
 
 .sliding::-webkit-scrollbar {
   display: none; }
