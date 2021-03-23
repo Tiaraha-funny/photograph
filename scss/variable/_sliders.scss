@@ -8,6 +8,16 @@
   opacity: 0.9;
 }
 
+.selected-thumbnil {
+  // width: 137px;
+  // flex-shrink: 0;
+  // height: var(--width);
+  // margin-bottom: 7px;
+  // margin-right: calc(var(--min-width) - 6px);
+  // border-radius: 6px;
+  opacity: 1 !important;
+}
+
 .slide {
   width: 137px;
   flex-shrink: 0;
@@ -25,11 +35,15 @@
 .ChoosenImg > img {
   width: var(--width);
   border-radius: 6px;
-  height: 100%;
+  margin-bottom: 5px;
 }
 
 @media (min-width: $querry) {
   .slide {
     width: 12.05%;
+  }
+
+  .ChoosenImg > img {
+    height: 100%;
   }
 }

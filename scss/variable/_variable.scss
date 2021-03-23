@@ -21,7 +21,7 @@ $min-width: 16px;
 }
 
 @mixin blend_mode {
-  font-family: "dm_sans";
+  // font-family: "dm_sans";
   font-size: var(--min-width);
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
@@ -33,6 +33,6 @@ $min-width: 16px;
   background-size: var(--width);
   display: block;
   width: 75px;
-  height: 45px;
+  height: 47.94px;
   border-radius: 8px;
 }

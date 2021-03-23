@@ -14,8 +14,9 @@
   <input type="checkbox" name="menu" id="menu" />
 
   <header class="masthead">
+    <header>
     <h1>Photograf</h1>
-
+    </header>
     <label for="menu_checkbox" class="icon icon_menu">
       <span class="a11y">Open the menu</span>
     </label>
@@ -63,21 +64,22 @@
         <div class="ChoosenImg">
           <source media="(min-width: 1172px)" type="image/webp" srcset="./images/rock_carvings_lg.webp">
           <source media="(min-width: 1172px)" type="image/webp" srcset="./images/rock_carvings_lg.jpg">
-          
           <source media="(min-width: 692px)" type="image/webp" srcset="./images/rock_carvings_md.webp">
           <source media="(min-width: 692px)" type="image/webp" srcset="./images/rock_carvings_md.jpg">
           <source type="image/webp" srcset="./images/rock_carvings_sm.webp">
-          <img src="./webroot/images/rock_carvings_sm.jpg" width="274" height="170" alt>
+          <!-- <img src="./webroot/images/rock_carvings_sm.jpg" width="246" height="215" alt> -->
+          <img src="./webroot/images/rock_carvings_lg.jpg" width="246" height="215" alt>
+
         </div>
         <div class="sliding sliders">
-          <img class="slide" src="./webroot/images/rock_carvings_lg.jpg" alt="the first images, which is set by default, that can be choosen by clicking on it" />
-          <img class="slide" src="./webroot/images/stairs_lg.jpg" alt="the second images that can be choosen by clicking on it" />
-          <img class="slide" src="./webroot/images/ripples_lg.jpg" alt="the third images that can be choosen by clicking on it" />
-          <img class="slide" src="./webroot/images/dunes_lg.jpg" alt="the fourth images that can be choosen by clicking on it" />
-          <img class="slide" src="./webroot/images/arches_lg.jpg" alt="the fith images that can be choosen by clicking on it" />
-          <img class="slide" src="./webroot/images/car_lg.jpg" alt="the six images that can be choosen by clicking on it" />
-          <img class="slide" src="./webroot/images/sunset_lg.jpg" alt="the seventh images that can be choosen by clicking on it" />
-          <img class="slide" src="./webroot/images/canyon_lg.jpg" alt="the eighth images that can be choosen by clicking on it" />
+          <img class="slide" src="./webroot/images/rock_carvings_sm.jpg" alt="the first images, which is set by default, that can be choosen by clicking on it" />
+          <img class="slide" src="./webroot/images/stairs_sm.jpg" alt="the second images that can be choosen by clicking on it" />
+          <img class="slide" src="./webroot/images/ripples_sm.jpg" alt="the third images that can be choosen by clicking on it" />
+          <img class="slide" src="./webroot/images/dunes_sm.jpg" alt="the fourth images that can be choosen by clicking on it" />
+          <img class="slide" src="./webroot/images/arches_sm.jpg" alt="the fith images that can be choosen by clicking on it" />
+          <img class="slide" src="./webroot/images/car_sm.jpg" alt="the six images that can be choosen by clicking on it" />
+          <img class="slide" src="./webroot/images/sunset_sm.jpg" alt="the seventh images that can be choosen by clicking on it" />
+          <img class="slide" src="./webroot/images/canyon_sm.jpg" alt="the eighth images that can be choosen by clicking on it" />
         </div>
       </picture>
     
@@ -139,11 +141,13 @@
       </header>
 
       <form action="" method="get">
+        <div class="latest__input">
         <label class="latest__email" for="email">Your email address</label><br />
         <input type="text" name="email" id="email" placeholder="e.g. jesse@gmail.com" />
+      </div>
+        <button class="latest__email--button" type="submit">Subscribe</button>
       </form>
 
-      <button type="submit">Subscribe</button>
     </section>
 
     <section class="third__section">

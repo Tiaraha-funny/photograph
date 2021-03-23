@@ -1,14 +1,15 @@
 @import "variable";
 
-.masthead__icon--menu {
-  padding-top: calc(var(--pixels) - 32px);
-}
-
 .masthead {
   background-color: #434ccc;
   color: var(--white);
   padding-left: calc(var(--pixels) - 48px);
   @include flex;
+  align-items: center;
+  padding-block-start: 32px;
+  padding-block-end: 32px;
+  padding-inline-end: 24px;
+  padding-inline-start: 80px;
 }
 
 .masthead__navigation {
@@ -17,25 +18,12 @@
 
 [type="checkbox"] {
   position: var(--position);
-  right: calc(var(--pixels) - 51px);
-  top: calc(var(--pixels) - 37px);
+  right: calc(var(--pixels) - 35px);
+  top: calc(var(--pixels) - 28px);
   width: 30px;
   height: 26px;
   opacity: 0;
-}
-
-[type="checkbox"]:checked ~ header label {
-  position: var(--position);
-  background-color: #000000;
-  right: 0;
-  opacity: 0.6;
-  width: 100%;
-  height: 50%;
-  top: calc(var(--pixels) + 14px);
-  transform: translateX(50%);
-  transition-timing-function: ease;
-  animation-name: menu;
-  animation-duration: 2s;
+  cursor: pointer;
 }
 
 @keyframes menu {
@@ -65,12 +53,15 @@
 
 [type="checkbox"]:checked ~ header > nav {
   display: block;
-  position: var(--position);
-  right: var(--pixels);
-  top: calc(var(--pixels) + 26px);
-  transform: translateX(0%);
-  animation-name: lists;
-  animation-duration: 2s;
+    position: var(--position);
+    background-color: #000000;
+top: 100px;
+    right: 10%;
+    width: 80%;
+    padding-bottom: 50px;
+    font-size: 22px;
+    padding-top: 50px;
+    text-align: center;
 }
 
 @keyframes lists {
@@ -105,7 +96,7 @@
 }
 
 .menu {
-  width: calc(var(--width) - 50%);
+  width: calc(var(--width) - 30%);
 }
 
 @media (min-width: $querry) {
@@ -116,7 +107,6 @@
   .masthead__navigation {
     display: block;
     margin-right: var(--pixels);
-    margin-top: var(--pixels);
   }
 
   .lists {
@@ -129,11 +119,9 @@
   }
 
   .lists > li > a {
-    font-weight: 700;
-    font-size: calc(var(--pixels) - 48px);
+    font-size: calc(var(--pixels) - 45px);
     line-height: calc(var(--pixels) - 40px);
     text-decoration: $allnones;
-    text-transform: uppercase;
     color: var(--white);
   }
 

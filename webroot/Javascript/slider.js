@@ -3,36 +3,27 @@ function Slider(slider) {
       throw Error('No Gallerry Found!!!');
   }
   const images = Array.from(slider.querySelectorAll('img'));
-  const modal = document.querySelector('.ChoosenImg');
+  const bigImageDisplay = document.querySelector('.ChoosenImg');
   
   function showImage(el) {
     if (!el) {
       console.info('no image to show');
       return;
     };
-    modal.querySelector('img').src = el.src;
-    currentImage = el;
-    openModal();
-    closeModal();
+    bigImageDisplay.querySelector('img').src = el.src;
+
+    images.forEach(image => {
+
+      if(image.classList.contains("selected-thumbnil")) {
+        image.classList.remove("selected-thumbnil");
+      }
+    });
+    el.classList.add("selected-thumbnil");
+    console.log("source",  el.src);
     }
 
   images.forEach(image => {
     image.addEventListener('click', e => showImage(e.currentTarget));
   });
-
-  function openModal() {
-    console.info('Open this modal ....')
-
-    if (modal.matches('.open')) {
-      console.info('Modal already open');
-      return;
-    }
-
-    modal.classList.add('open');
-  }
-
-  function closeModal() {
-    modal.classList.remove('open');
-  }
 }
 const mySlider = Slider(document.querySelector('.sliders'));

@@ -30,12 +30,17 @@
   list-style: $allnones;
 }
 
+.lists__icons li:nth-of-type(1) {
+  margin-right: 10px;
+}
+
 .icon {
   width: calc(var(--width) - 45%);
 }
 
 .section__container--table--lists {
   @include flex;
+  font-weight: 500;
 }
 
 .first__table {

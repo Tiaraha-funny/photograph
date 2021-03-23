@@ -20,7 +20,8 @@
 .heading > p {
   font-size: calc(var(--min-width) + 2px);
   line-height: calc(var(--min-width) * 2);
-  padding-bottom: calc(var(--min-width) * 2);
+  padding-bottom: calc(var(--min-width) * 4);
+  padding-top: calc(var(--min-width) * 1);
 }
 
 @media (min-width: $querry) {
@@ -32,7 +33,7 @@
   
 
   .first__section {
-    padding-right: calc(var(--min-width) * 5);
-    padding-left: calc(var(--min-width) * 5);
+    padding-right: calc(var(--min-width) * 8);
+    padding-left: calc(var(--min-width) * 8);
   }
 }
