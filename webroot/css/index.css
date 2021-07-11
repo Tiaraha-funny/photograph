@@ -75,7 +75,7 @@ figure {
 span {
   visibility: hidden; }
 
-@media (min-width: 1114px) {
+@media (min-width: 1440px) {
   h1 > a {
     font-size: calc(var(--min-width) + 24px);
     line-height: calc(var(--min-width) * 3); }
@@ -175,7 +175,7 @@ span {
 .menu {
   width: calc(var(--width) - 30%); }
 
-@media (min-width: 1114px) {
+@media (min-width: 1440px) {
   .masthead > * {
     max-width: 1110px;
     margin: auto;
@@ -250,7 +250,7 @@ aside > a {
   padding-bottom: calc(var(--min-width) * 4);
   padding-top: calc(var(--min-width) * 1); }
 
-@media (min-width: 1114px) {
+@media (min-width: 1440px) {
   .heading > h2 {
     max-width: calc(var(--width-P) + 129px);
     font-size: calc(var(--pixels) + 8px);
@@ -289,7 +289,7 @@ aside > a {
   margin-bottom: 5px;
   height: 100%; }
 
-@media (min-width: 1114px) {
+@media (min-width: 1440px) {
   .slide {
     width: 12.05%; }
   .ChoosenImg > img {
@@ -351,7 +351,7 @@ em {
   mix-blend-mode: normal;
   font-style: normal; }
 
-@media (min-width: 1114px) {
+@media (min-width: 1440px) {
   .section__main--heading > h3 {
     font-size: calc(var(--min-width) + 36px);
     line-height: calc(var(--min-width) * 4);
@@ -425,13 +425,13 @@ em {
 .latest__email--button:hover {
   color: var(--orange); }
 
-@media (min-width: 1114px) {
+@media (min-width: 1440px) {
   .latest__heading {
     max-width: calc(var(--width-P) - 0); }
   .latest__heading > h3 {
     font-size: calc(var(--pixels) - 12px);
     line-height: var(--pixels);
-    width: 60%; }
+    width: 65%; }
   .second__section > * {
     max-width: 1140px;
     margin: auto; }
@@ -555,7 +555,7 @@ em {
   height: 47.94px;
   border-radius: 8px; }
 
-@media (min-width: 1114px) {
+@media (min-width: 1440px) {
   .third__section--wrapper {
     display: flex;
     flex-direction: row;
@@ -590,7 +590,7 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   mix-blend-mode: normal; }
 
-@media (min-width: 1114px) {
+@media (min-width: 1440px) {
   footer {
     padding-top: calc(var(--min-width) * 2);
     padding-inline-end: 30px;
