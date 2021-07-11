@@ -36,10 +36,14 @@
 
 @media (min-width: $querry) {
   .slide {
-    width: 12.05%;
+    width: 134px;
   }
 
   .ChoosenImg > img {
     height: 100%;
+  }
+
+  .sliding:not(.ChoosenImg) {
+    overflow-x: unset;
   }
 }

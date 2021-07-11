@@ -291,9 +291,11 @@ aside > a {
 
 @media (min-width: 1440px) {
   .slide {
-    width: 12.05%; }
+    width: 134px; }
   .ChoosenImg > img {
-    height: 100%; } }
+    height: 100%; }
+  .sliding:not(.ChoosenImg) {
+    overflow-x: unset; } }
 
 .section__main--heading > h3 {
   font-size: calc(var(--min-width) + 24px);
