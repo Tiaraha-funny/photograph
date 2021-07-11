@@ -4,7 +4,6 @@ footer {
   margin-left: var(--min-width);
   padding-top: var(--min-width);
   padding-bottom: calc(var(--min-width) * 2);
-
 }
 
 .laaqiq,
@@ -25,14 +24,12 @@ footer {
   }
 
   footer > * {
-    max-width: 80%;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
+    max-width: 1140px;
+    margin: auto;
   }
 
   .main__footer {
     @include flex;
-    // margin: 0;
     padding: 0;
   }
 }

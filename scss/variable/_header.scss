@@ -109,9 +109,8 @@
 
 @media (min-width: $querry) {
   .masthead > * {
-    max-width: 80%;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    max-width: 1110px;
+    margin: auto;
     padding-block-start: 30px;
     padding-block-end: 30px;
   }
