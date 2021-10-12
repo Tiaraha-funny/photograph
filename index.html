@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./webroot/css/index.css" />
+
+    <title>Front end final</title>
+  </head>
+
+  <body>
+    <input type="checkbox" name="menu" id="menu" role="checkbox" aria-label="checkbox menu"/>
+
+    <header class="masthead">
+      <div class="masthead__wrapper" role="text" aria-label="title text">
+        <h1><a href="index.html">Photograph</a></h1>
+        <label for="menu" class="icon icon_menu">
+          <span class="a11y">Open the menu</span>
+        </label>
+
+        <picture class="masthead__icon--menu" role="img" aria-label="icon menu">
+          <img
+            class="menu"
+            src="./webroot/icons/icon_menu.png"
+            alt="menu whithin checkebox behind it which handle the lists of menu"
+          />
+        </picture>
+
+        <picture class="masthead__icon--close__menu">
+          <img
+            class="menu close"
+            src="./webroot/icons/close.png"
+            alt="menu whithin checkebox behind it which handle the lists of menu"
+          />
+        </picture>
+
+        <nav class="masthead__navigation">
+          <ul class="lists" role="list" aria-label="lists of navigation links">
+            <li class="bold1" role="listitem" aria-label="lists of navigation links">
+              <a href="https://web.facebook.com/OnjaAfrica/?_rdc=1&_rdr"
+                ><b>Home</b></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="https://web.facebook.com/pg/OnjaAfrica/blog">Blog</a>
+            </li>
+            <li>
+              <a href="https://web.facebook.com/pg/OnjaAfrica/contact">
+                Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="first__section">
+        <div class="first__section--wrapper" role="link" aria-label="link of the facebook">
+          <aside>
+            <a
+              href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+              >Back to portfolio</a
+            >
+          </aside>
+
+          <header class="heading">
+            <h2>Beauty is seen through a lens</h2>
+            <p>
+              Perspective matters.<br />All my photographs try to capture that
+              perspective, however subtle.
+            </p>
+          </header>
+
+          <picture class="images">
+            <div class="ChoosenImg" role="img" aria-label="choosen image">
+              <source
+                media="(min-width: 1170px)"
+                type="image/webp"
+                srcset="./images/rock_carvings_lg.webp"
+              />
+              <source
+                media="(min-width: 1170px)"
+                type="image/webp"
+                srcset="./images/rock_carvings_lg.jpg"
+              />
+              <source
+                media="(min-width: 692px)"
+                type="image/webp"
+                srcset="./images/rock_carvings_md.webp"
+              />
+              <source
+                media="(min-width: 692px)"
+                type="image/webp"
+                srcset="./images/rock_carvings_md.jpg"
+              />
+              <source
+                type="image/webp"
+                srcset="./images/rock_carvings_sm.webp"
+              />
+              <img
+                class="big-image"
+                src="./webroot/images/rock_carvings_lg.jpg"
+                width="246"
+                height="215"
+                alt='The shosen image from slider'
+              />
+            </div>
+            <div class="sliding sliders" role="img" aria-label="slider images">
+              <source
+                type="image/webp"
+                srcset="./images/rock_carvings_sm.webp"
+              />
+              <img
+                class="slide"
+                src="./webroot/images/rock_carvings_md.jpg"
+                alt="the first images, which is set by default, that can be choosen by clicking on it"
+              />
+              <source type="image/webp" srcset="./images/stairs_sm.webp" />
+              <img
+                class="slide"
+                src="./webroot/images/stairs_md.jpg"
+                alt="the second images that can be choosen by clicking on it"
+              />
+              <source type="image/webp" srcset="./images/ripples_sm.webp" />
+              <img
+                class="slide"
+                src="./webroot/images/ripples_md.jpg"
+                alt="the third images that can be choosen by clicking on it"
+              />
+              <source type="image/webp" srcset="./images/dunes_sm.webp" />
+              <img
+                class="slide"
+                src="./webroot/images/dunes_md.jpg"
+                alt="the fourth images that can be choosen by clicking on it"
+              />
+              <source type="image/webp" srcset="./images/arches_sm.webp" />
+              <img
+                class="slide"
+                src="./webroot/images/arches_md.jpg"
+                alt="the fith images that can be choosen by clicking on it"
+              />
+              <source type="image/webp" srcset="./images/car_sm.webp" />
+              <img
+                class="slide"
+                src="./webroot/images/car_md.jpg"
+                alt="the six images that can be choosen by clicking on it"
+              />
+              <source type="image/webp" srcset="./images/sunset_sm.webp" />
+              <img
+                class="slide"
+                src="./webroot/images/sunset_md.jpg"
+                alt="the seventh images that can be choosen by clicking on it"
+              />
+              <source type="image/webp" srcset="./images/canyon_sm.webp" />
+              <img
+                class="slide"
+                src="./webroot/images/canyon_md.jpg"
+                alt="the eighth images that can be choosen by clicking on it"
+              />
+            </div>
+          </picture>
+
+          <div class="section__container" role="status" aria-label="status of contentinfo">
+            <div class="section__container--table--lists" role="list" aria-label="status of contentinfo">
+              <div class="first__table" role="listitem" aria-label="status of contentinfo">
+                <p><em>Date</em><br /><b>July 2019</b></p>
+                <p><em>Camera</em><br /><b>Canon EOS 1D Mark IV</b></p>
+              </div>
+              <div class="seconde__table" role="listitem" aria-label="listof contentinfo">
+                <p><em>Location</em><br /><b>Morrocan Highlands</b></p>
+                <p><em>Lens</em><br /><b>70mm f2.8 @ 1/16”</b></p>
+              </div>
+            </div>
+
+            <div class="section__main" role="article" aria-label="main description">
+              <header class="section__main--heading">
+                <h3>Mineral carvings</h3>
+              </header>
+              <p class="section__main--description">
+                Deep in the deserts of Morroco, lies a dried-up valley,
+                featuring some of the most exquisite rock formations, carved
+                millions of years ago.
+              </p>
+              <p class="section__main--subdescription">
+                To truly experience these beautiful formations, one has to visit
+                them in person. I hope my photos have managed to capture the
+                sheer size – gravitas even – and spellbinding nature of these
+                eroded walls.
+              </p>
+
+              <figure>
+                <ul class="lists__icons">
+                  <li>
+                    <a
+                      href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                    >
+                      <img
+                        class="icon"
+                        src="./webroot/icons/icon_facebook.png"
+                        alt="facebook icon that you can glimpse that is set in ONJAs page"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                    >
+                      <img
+                        class="icon"
+                        src="./webroot/icons/icon_twitter.png"
+                        alt="twitter icon that you can glimpse that is set in ONJAs page"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                    >
+                      <img
+                        class="icon"
+                        src="./webroot/icons/icon_instagram.png"
+                        alt="instagram icon that you can glimpse that is set in ONJAs page"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="second__section">
+        <div class="wrapper" role="article" aria-label="description of second section">
+          <header class="latest__heading">
+            <a href="http://les-professionnels-de-madagascar.com/ong-onja/ "
+              >Latest</a
+            >
+            <h3>Stay up-to-date with my updates</h3>
+          </header>
+
+          <form action="/" method="get">
+            <div class="latest__input" role="form" aria-label="email address">
+              <label class="latest__email" for="email">Your email address</label
+              ><br />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="e.g. jesse@gmail.com"
+              />
+            </div>
+            <button class="latest__email--button" type="submit"  >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="third__section">
+        <div class="third__section--wrapper" role="article" aria-label="headings of the third section">
+          <header class="thirst__secton--heading">
+            <h2>Photograph</h2>
+            <p>
+              The personal website of Jesse McJessesen, professional
+              photographer.
+            </p>
+
+            <div class="intro__icons" role="contentinfo" aria-label="contentinfo of icons">
+              <ul class="intro__lists--icons">
+                <li>
+                  <a
+                    href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                  >
+                    <img
+                      class="icon"
+                      src="./webroot/icons/icon_facebook.png"
+                      alt="facebook icon that you can glimpse that is set in ONJA's page"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                  >
+                    <img
+                      class="icon"
+                      src="./webroot/icons/icon_twitter.png"
+                      alt="twitter icon that you can glimpse that is set in ONJA's page"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                  >
+                    <img
+                      class="icon"
+                      src="./webroot/icons/icon_instagram.png"
+                      alt="instagram icon that you can glimpse that is set in ONJA's page"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </header>
+
+          <div class="navigation" role="navigation" aria-label="form navigation lists">
+            <ul class="navigation__lists" role="list" aria-label="lists of navigation links">
+              <li class="bold" role="listitem" aria-label="list item of navigation links">
+                <a
+                  href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                  ><b>Home</b></a
+                >
+              </li>
+              <div class="light__link" role="list" aria-label="list icons">
+                <li role="listitem" aria-label="list item of navigation links">
+                  <a
+                    href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                    >About</a
+                  >
+                </li>
+                <li role="listitem" aria-label="list item of navigation links">
+                  <a
+                    href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                    >Portfolio</a
+                  >
+                </li>
+                <li role="listitem" aria-label="list item of navigation links">
+                  <a
+                    href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                    >Blog</a
+                  >
+                </li>
+                <li role="listitem" aria-label="list item of navigation links">
+                  <a
+                    href="https://web.facebook.com/pg/OnjaAfrica/about/?ref=page_internal"
+                  >
+                    Contact</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="aside" role="complementary" aria-label="some advice">
+            <div class="food" role="text" aria-label="information text">
+              <p>Rust, pumpkin, tans, and spices.</p>
+              <p><b>July 15, 2019</b></p>
+            </div>
+            <div class="experiece" role="text" aria-label="experience text">
+              <p>Experiencing Japan</p>
+              <p><b>July 10, 2019</b></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+
+    <footer>
+      <div class="main__footer" role="doc-footnote" aria-label="footer">
+        <p>
+          Created by <a class="laaqiq" href="Laaqiq"> Laaqiq </a>, modified by
+          <a
+            class="onja"
+            href="http://les-professionnels-de-madagascar.com/ong-onja/ "
+          >
+            Onja
+          </a>
+        </p>
+        <p>&#9426; PHOTOGRAF, 2020. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./webroot/Javascript/slider.js"></script>
+  </body>
+</html>

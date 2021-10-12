@@ -1,0 +1,35 @@
+@import "variable";
+
+footer {
+  margin-left: var(--min-width);
+  padding-top: var(--min-width);
+  padding-bottom: calc(var(--min-width) * 2);
+}
+
+.laaqiq,
+.onja {
+  @include blend_mode;
+  text-decoration: $allnones;
+}
+
+.main__footer {
+  @include blend_mode;
+}
+
+@media (min-width: $querry) {
+  footer {
+    padding-top: calc(var(--min-width) * 2);
+    padding-inline-end: 30px;
+    margin-inline-start: -15px;
+  }
+
+  footer > * {
+    max-width: 1140px;
+    margin: auto;
+  }
+
+  .main__footer {
+    @include flex;
+    padding: 0;
+  }
+}

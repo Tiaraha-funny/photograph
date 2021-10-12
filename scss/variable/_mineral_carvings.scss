@@ -1,0 +1,78 @@
+@import "variable";
+
+.section__main--heading > h3 {
+  font-size: calc(var(--min-width) + 24px);
+  line-height: calc(var(--min-width) * 3);
+  font-family: "DM serif Display";
+  font-weight: normal;
+}
+
+.section__main--description {
+  font-size: calc(var(--min-width) + 2px);
+  line-height: calc(var(--min-width) * 2);
+  max-width: calc(var(--width-P) + 220px);
+}
+
+.section__main--subdescription {
+  @include blend_mode;
+  font-size: calc(var(--min-width) + 2px);
+}
+
+.section__container {
+  padding-top: calc(var(--min-width) * 3);
+}
+
+.lists__icons {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.lists__icons li {
+  list-style: $allnones;
+}
+
+.lists__icons li:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.icon {
+  width: calc(var(--width) - 45%);
+}
+
+.section__container--table--lists {
+  @include flex;
+  font-weight: 500;
+}
+
+.first__table {
+  padding-left: 0;
+  width: 30%;
+}
+
+.seconde__table {
+  width: calc(var(--width) - 50%);
+}
+
+em {
+  @include blend_mode;
+  font-style: normal;
+}
+
+@media (min-width: $querry) {
+  .section__main--heading > h3 {
+    font-size: calc(var(--min-width) + 36px);
+    line-height: calc(var(--min-width) * 4);
+    margin-top: calc(var(--min-width) - 16px);
+  }
+  .section__container {
+    @include flex;
+    padding-top: calc(var(--min-width) * 4);
+    padding-bottom: calc(var(--min-width) * 2);
+  }
+
+  .section__container--table--lists {
+    width: var(--width);
+  }
+}
