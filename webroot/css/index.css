@@ -1,28 +1,33 @@
 @font-face {
+  font-display: swap;
   font-family: "DM sans";
   font-weight: 400;
   font-style: normal;
   src: local("DM sans-Regular"), local("DM sans Regular"), local("DM sans-Bold"), local("DM sans Bold"), url("../fonts/dm_sans_400.woff") format("woff"), url("../fonts/dm_sans_500.woff") format("woff"), url("../fonts/dm_sans_700.woff") format("woff"), url("../fonts/dm_sans_400}.woff2") format("woff2"), url("../fonts/dm_sans_500.woff2") format("woff2"), url("../fonts/dm_sans_700.woff2") format("woff2"); }
 
 @font-face {
+  font-display: swap;
   font-family: "DM sans";
   font-weight: 700;
   font-style: normal;
   src: local("DM sans-Regular"), local("DM sans Regular"), local("DM sans-Bold"), local("DM sans Bold"), url("../fonts/dm_sans_400.woff") format("woff"), url("../fonts/dm_sans_500.woff") format("woff"), url("../fonts/dm_sans_700.woff") format("woff"), url("../fonts/dm_sans_400}.woff2") format("woff2"), url("../fonts/dm_sans_500.woff2") format("woff2"), url("../fonts/dm_sans_700.woff2") format("woff2"); }
 
 @font-face {
+  font-display: swap;
   font-family: "DM sans";
   font-weight: 500;
   font-style: normal;
   src: local("DM sans-Regular"), local("DM sans Regular"), local("DM sans-Bold"), local("DM sans Bold"), url("../fonts/dm_sans_400.woff") format("woff"), url("../fonts/dm_sans_500.woff") format("woff"), url("../fonts/dm_sans_700.woff") format("woff"), url("../fonts/dm_sans_400}.woff2") format("woff2"), url("../fonts/dm_sans_500.woff2") format("woff2"), url("../fonts/dm_sans_700.woff2") format("woff2"); }
 
 @font-face {
+  font-display: swap;
   font-family: "DM serif Display";
   font-weight: 400;
   font-style: normal;
   src: local("DM serif Display-Regular"), local("DM serif Display Regular"), local("DM serif Display-Bold"), local("DM serif Display Bold"), url("../fonts/dm_serif_display_400.woff") format("woff"), url("../fonts/dm_serif_display_400.woff2") format("woff2"); }
 
 @font-face {
+  font-display: swap;
   font-family: "DM serif Display";
   font-weight: 400;
   font-style: italic;
