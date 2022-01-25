@@ -26,7 +26,7 @@ nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on
 From your command line:
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/Tiaraha-funny/photograph-gallery.git
 # Install dependencies
 $ npm install
 # Run the app
